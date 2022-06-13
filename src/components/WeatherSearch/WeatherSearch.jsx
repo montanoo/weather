@@ -20,7 +20,7 @@ export const WeatherSearch = () => {
   console.log(result)
 
   return (
-    // ⚠️ sending a function as parameter to the SearchBar.
+    // ⚠️ sending a function as props to the SearchBar.
     <div>
       <SearchBar onSubmit={onSearchBarSubmit} /> 
     </div>
