@@ -8,7 +8,7 @@ export default axios.create({
     unitGroup: 'metric',
   },
   headers: {
-    'X-RapidAPI-Key': 'd3fb2d9be0mshbecca5fe738ac6dp149be7jsna8b1657c8928',
+    'X-RapidAPI-Key': process.env.REACT_APP_KEY,
     'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
   }
 })
