@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { SearchBar } from "../Search/SearchBar";
+import { Weather } from "../Weather/Weather";
 import OpenWeather from "../../api/OpenWeather";
 
 export const WeatherSearch = () => {
@@ -12,17 +13,16 @@ export const WeatherSearch = () => {
       const response = await OpenWeather.get("", {
         params: { location: term },
       });
-      setResult(response.data.locations)
+      setResult(response.data.locations);
     }
     if (term) getWeather();
   }, [term]);
 
-  console.log(result)
-
   return (
     // ⚠️ sending a function as props to the SearchBar.
     <div>
-      <SearchBar onSubmit={onSearchBarSubmit} /> 
+      <SearchBar onSubmit={onSearchBarSubmit} />
+      <Weather props={result} />
     </div>
   );
 };
