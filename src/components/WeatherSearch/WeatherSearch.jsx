@@ -20,7 +20,7 @@ export const WeatherSearch = () => {
 
   return (
     // ⚠️ sending a function as props to the SearchBar.
-    <div>
+    <div className="h-screen bg-cover bg-center" style={{backgroundImage:"url(https://source.unsplash.com/c_iygJQ9Y-c"}}>
       <SearchBar onSubmit={onSearchBarSubmit} />
       <Weather props={result} />
     </div>

@@ -3,7 +3,7 @@ import axios from 'axios';
 export default axios.create({
   baseURL: 'https://visual-crossing-weather.p.rapidapi.com/forecast',
   params: {
-    aggregateHours: '24',
+    aggregateHours: '12',
     contentType: 'json',
     unitGroup: 'metric',
   },

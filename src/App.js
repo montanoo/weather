@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="font-poppins">
+    <div className="font-inter h-full">
       <WeatherSearch />
     </div>
   );

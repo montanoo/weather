@@ -14,7 +14,7 @@ export const SearchBar = (props) => {
       function which also calls the onSubmit function that came as props. */
     <div>
       <form onSubmit={onFormSubmit}>
-        <div className="font-poppins flex align-center flex-col items-center">
+        <div className="flex align-center flex-col items-center">
            <input
             type="text"
             placeholder="Location"
