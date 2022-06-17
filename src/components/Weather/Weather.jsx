@@ -11,7 +11,7 @@ export const Weather = ({ props = "" }) => {
           <div id="conditions" className="text-6xl tracking-widest">
             {values.values[0].conditions.toUpperCase()}
           </div>
-          <div id="location" className="text-2xl text-black">
+          <div id="location" className="text-4xl font-black drop-shadow-lg">
             {values.address}
           </div>
           <div id="temperature" className="text-5xl">
